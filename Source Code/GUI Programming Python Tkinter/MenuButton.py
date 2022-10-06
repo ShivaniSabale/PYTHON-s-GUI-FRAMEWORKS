@@ -1,0 +1,15 @@
+import tkinter
+window = tkinter.Tk()
+window.title("My GUI")
+window.configure(background="white") 
+window.geometry("100x100") 
+mb = tkinter.Menubutton ( window, text= "Menu") 
+mb.grid() 
+mb.menu = tkinter.Menu ( mb, tearoff = 0 ) 
+mb["menu"] = mb.menu
+a = tkinter.IntVar() 
+b = tkinter.IntVar() 
+mb.menu.add_checkbutton ( label ='Contact', variable = a) 
+mb.menu.add_checkbutton ( label = 'About', variable = b) 
+mb.pack() 
+window.mainloop()
