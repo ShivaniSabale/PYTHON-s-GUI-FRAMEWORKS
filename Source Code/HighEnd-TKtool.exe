@@ -1,1 +1,6 @@
+import tkinter
+import tk_tools
+window = tkinter.Tk()
+# Place your Tkinter widgets here
+window.mainloop()
 
